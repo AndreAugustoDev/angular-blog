@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-content',
-  standalone: true,
-  imports: [],
-  templateUrl: './content.component.html',
-  styleUrl: './content.component.css'
+	selector: "app-content",
+	standalone: true,
+	imports: [RouterLink],
+	templateUrl: "./content.component.html",
+	styleUrl: "./content.component.css",
 })
 export class ContentComponent {
-
+	contentImage!: string;
+	contentTitle!: string;
+	contentDescription!: string;
 }
